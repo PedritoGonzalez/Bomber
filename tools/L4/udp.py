@@ -18,5 +18,5 @@ def flood(target):
             )
         else:
             print(
-                f"{Fore.GREEN}[+] {Fore.YELLOW}UDP random packet sent! Payload size: {len(payload)}, enviado a {target[0]} {target[1]}. {Fore.RESET}"
+                f"{Fore.GREEN}[+] {Fore.YELLOW}UDP random packet sent! Payload size: {len(payload)}, enviado a {target[0]}:{target[1]}. {Fore.RESET}"
             )
