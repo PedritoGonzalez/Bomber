@@ -11,6 +11,7 @@ try:
     from tools.crash import CriticalError
     import tools.addons.logo
     import tools.addons.winpcap
+    from tools.addons import parametros
     from tools.method import AttackMethod    
 except ImportError as err:
     print("Error al importar modulos, reintentando...")
