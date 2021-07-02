@@ -10,7 +10,7 @@ try:
     from tools.crash import CriticalError
     import tools.addons.logo
     import tools.addons.winpcap
-    from tools.addons import parametros
+    from tools.addons.parametros import parametros
     from tools.method import AttackMethod    
 except ImportError as err:
     print(f"Error al importar modulos, reintentando... \n")
@@ -39,7 +39,7 @@ print("""Elija el metodo:
 9- Slowloris
 10- Memcached""")
 opcion = (int)(input())
-method = parametros.metodo(opcion)
+method = metodo(opcion)
 
 #Hilos
 print("Cantidad de hilos: ")
