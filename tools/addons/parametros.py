@@ -1,24 +1,4 @@
 import sys
-import os
-
-def SO(opcion):
-
-    if(opcion == 1): #Windows
-        os.system("pip install -r requirements.txt")
-
-    elif(opcion==2): #Linux
-        os.system("pip3 install -r requirements.txt")
-        
-    elif(opcion==3): #Termux
-        os.system("pip3 install -r requirements.txt")
-        
-    elif(opcion==4): #ISHSHELLIOS
-        os.system("python3 -m pip install -r requirements.txt")
-
-    else:
-        print("Opcion incorrecta")
-        
-    
 
 def metodo(opcion):
 
