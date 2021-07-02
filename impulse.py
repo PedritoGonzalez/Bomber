@@ -39,7 +39,7 @@ print("""Elija el metodo:
 9- Slowloris
 10- Memcached""")
 opcion = (int)(input())
-method = metodo(opcion)
+method = parametros.metodo(opcion)
 
 #Hilos
 print("Cantidad de hilos: ")
