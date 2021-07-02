@@ -14,13 +14,7 @@ try:
     from tools.method import AttackMethod    
 except ImportError as err:
     print(f"Error al importar modulos, reintentando... \n")
-    print("Seleccione su sistema operativo:
-          1- Windows
-          2- Linux
-          3- Termux
-          4- ISHSHELL IOS")
-    opcion = input()
-    parametros.SO()
+    os.system("pip3 install -r requirements.txt")
 
 try:
     from tools.crash import CriticalError
