@@ -13,23 +13,20 @@ try:
     from tools.addons import parametros
     from tools.method import AttackMethod    
 except ImportError as err:
-    print("Error al importar modulos, reintentando...")
-    print("""Sistema operativo:
-1- Windows
-2- Linux
-3- Termux
-4- ISHSHELL IOS""")
-    opcion = (int)(input())
-    
-    try:
-        parametros.SO(opcion)
+    print(f"Error al importar modulos, reintentando... \n")
+    os.system("pip install -r requirements.txt")
 
-    except NameError as err:
-        print("Archivos faltantes, reinstale el producto")
-        sys.exit(1)
+try:
+    from tools.crash import CriticalError
+    import tools.addons.logo
+    import tools.addons.winpcap
+    from tools.addons import parametros
+    from tools.method import AttackMethod 
+except ImportError as err:
+    print("Error al importar modulos, reinstale el producto")
+    sys.exit(1)
 
 #Metodo
-
 print("""Elija el metodo:
 1- SMS
 2- EMAIL
