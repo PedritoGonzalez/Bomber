@@ -10,18 +10,24 @@ try:
     from tools.crash import CriticalError
     import tools.addons.logo
     import tools.addons.winpcap
-    from tools.addons import parametros
+    from tools.addons.parametros import parametros
     from tools.method import AttackMethod    
 except ImportError as err:
     print(f"Error al importar modulos, reintentando... \n")
-    os.system("pip install -r requirements.txt")
+    print("Seleccione su sistema operativo:
+          1- Windows
+          2- Linux
+          3- Termux
+          4- ISHSHELL IOS")
+    opcion = input()
+    parametros.SO()
 
 try:
     from tools.crash import CriticalError
     import tools.addons.logo
     import tools.addons.winpcap
     from tools.addons import parametros
-    from tools.method import AttackMethod 
+    from tools.method import AttackMethod
 except ImportError as err:
     print("Error al importar modulos, reinstale el producto")
     sys.exit(1)
